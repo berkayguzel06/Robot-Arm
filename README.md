@@ -27,7 +27,7 @@ Project Scope
 Minimizing human requirements and errors in the industrial arms with remote control capabilities and
 watching the industrial arm's conditions in real time.
 
-__Components__
+## Components
 
 Pop-Sticks(for fasten the potentiometers, cables, servos) 
 Cables
@@ -49,7 +49,7 @@ Cables
 ![ESP32-ESP32S-ESP-32S-ESP-32-CP2102-kablosuz-WiFi-Bluetooth-geli-tirme-kurulu-mikro-USB-ift](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/67400aff-2aeb-4189-a466-e98cba80383d)
 
 
-__Solution Architecture__
+**Solution Architecture**
 
 ![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
 
