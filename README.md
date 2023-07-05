@@ -24,3 +24,8 @@ Project Scope
 
 Minimizing human requirements and errors in the industrial arms with remote control capabilities and
 watching the industrial arm's conditions in real time.
+
+__Solution Architecture__
+
+![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
+
