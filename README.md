@@ -1,4 +1,4 @@
-# Robotic Arm
+# Robot Arm Tutorial
 
 Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
 
@@ -7,7 +7,8 @@ __BRD (Business Requirements)__
 Executive Summary
 
 Firstly, the robotic arm is going to be assembled. Movement of the robotic arm will be handled with
-potentiometers. Fetching and displaying data will be handled. Creating a model and simulating with
+potentiometers. Potentiometers movement position save and repeatedly making the move after pressing button.
+Fetching and displaying data will be handled. Creating a model and simulating with
 Unity. Lastly, applying machine learning.
 
 Objectives
