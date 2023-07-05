@@ -26,6 +26,25 @@ Project Scope
 Minimizing human requirements and errors in the industrial arms with remote control capabilities and
 watching the industrial arm's conditions in real time.
 
+__Components__
+
+Pop-Sticks(for fasten the potentiometers, cables, servos) 
+Cables
+
+4 Servo(for moving arm)
+![tower-pro-sg90-rc-mini-servo-motor-27734-15-O](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6089d2a8-8e00-4b01-b1b5-287d6eba752e)
+
+4 Potentiometer(to move arms with potentiometers)
+![1K Potentiometer Tone Control](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/818d1beb-f3f1-49c4-90d1-45147cfbbf8a)
+
+1 Button(for changing movement mode)
+![1pc-J065-Push-Self-locking-Button-Switch-Green-Red-Colors-Electric-Switch-for-DIY-Model-Making](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/ab22942b-929c-42e1-b180-cbb8109d6ffa)
+
+ESP32(comminicate between components and commend move)
+![ESP32-ESP32S-ESP-32S-ESP-32-CP2102-kablosuz-WiFi-Bluetooth-geli-tirme-kurulu-mikro-USB-ift](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/67400aff-2aeb-4189-a466-e98cba80383d)
+
+
+
 __Solution Architecture__
 
 ![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
