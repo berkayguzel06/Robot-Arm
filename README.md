@@ -2,7 +2,7 @@
 
 Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
 
-__BRD (Business Requirements)__
+## BRD (Business Requirements)
 
 Executive Summary
 
