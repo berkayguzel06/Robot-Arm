@@ -2,7 +2,7 @@
 
 Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
 
-BRD (Business Requirements)
+__BRD (Business Requirements)__
 
 Executive Summary
 
@@ -31,6 +31,7 @@ __Solution Architecture__
 ![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
 
 __REFERENCES__
+
 https://randomnerdtutorials.com/getting-started-with-esp32/
 https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
 https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/
