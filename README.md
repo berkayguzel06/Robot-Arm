@@ -1,5 +1,6 @@
 # Robotic Arm
-A robotic arm that can control with potentiometers and from server remotely
+
+Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
 
 BRD (Business Requirements)
 
@@ -28,4 +29,13 @@ watching the industrial arm's conditions in real time.
 __Solution Architecture__
 
 ![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
+
+__REFERENCES__
+https://randomnerdtutorials.com/getting-started-with-esp32/
+https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
+https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/
+https://www.upesy.com/blogs/tutorials/esp32-servo-motor-sg90-on-micropython
+
+
+
 
