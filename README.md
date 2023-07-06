@@ -36,7 +36,7 @@ Cables
 
 ![tower-pro-sg90-rc-mini-servo-motor-27734-15-O](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6089d2a8-8e00-4b01-b1b5-287d6eba752e)
 
-*4 Potentiometer(to move arms with potentiometers)*
+*4 10K Potentiometer(to move arms with potentiometers)*
 
 ![1K Potentiometer Tone Control](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/818d1beb-f3f1-49c4-90d1-45147cfbbf8a)
 
