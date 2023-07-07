@@ -34,15 +34,15 @@ Cables
 
 *4 Servo(for moving arm)*
 
-![tower-pro-sg90-rc-mini-servo-motor-27734-15-O](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6089d2a8-8e00-4b01-b1b5-287d6eba752e)
+![towrpro_sg90](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f4e308f1-529f-42a8-9e83-8806c4511df1)
 
 *4 10K Potentiometer(to move arms with potentiometers)*
 
-![1K Potentiometer Tone Control](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/818d1beb-f3f1-49c4-90d1-45147cfbbf8a)
+![10k-potans-potansiyometre-spike-55636-56-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f572a792-8eae-4c5c-9ca6-14051aa3bcfb)
 
 *1 Button(for changing movement mode)*
 
-![51v2BfPNn+L _AC_SR263,263_QL70_](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f62af6e7-0942-405d-8be6-b0a72fb310ad)
+![09190-03-L-1](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/7ee6b8f5-09f8-4c25-98ab-92b3c878fd65)
 
 *ESP32(comminicate between components and commend move)*
 
@@ -51,7 +51,7 @@ Cables
 
 **Solution Architecture**
 
-![image](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/6f2dd60f-a43e-4943-bf03-877cee7a59eb)
+![DEU-DT_Machine_SA_V2 drawio (1)](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f53c1ec2-5d30-4efc-bbd9-4d4fe7cd46a4)
 
 __REFERENCES__
 
