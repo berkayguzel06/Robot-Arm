@@ -46,7 +46,7 @@ Cables
 
 *ESP32(comminicate between components and commend move)*
 
-![ESP32-ESP32S-ESP-32S-ESP-32-CP2102-kablosuz-WiFi-Bluetooth-geli-tirme-kurulu-mikro-USB-ift](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/67400aff-2aeb-4189-a466-e98cba80383d)
+![esp32-esp-32s-wifi-bluetooth-dual-mode-developement-board-37182-73-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/485a1d5b-64e4-47ae-a275-bb5a1db75360)
 
 
 **Solution Architecture**
