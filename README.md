@@ -49,6 +49,28 @@ Cables
 
 ![DEU-DT_Machine_SA_V2 drawio (1)](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f53c1ec2-5d30-4efc-bbd9-4d4fe7cd46a4)
 
+## Assembling The Arm
+**Assembling the servo motors with chop-sticks**
+
+![Assembled Servo Motors With Chop-Sticks](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/45431c07-27ae-4cf4-8fa2-6b7f00202826)
+
+**Assembling the potentiometers with chop-sticks**
+
+(potansiometre foto)
+
+**Cable Connections**
+
+(circuit diagram foto)
+
+**MicroPython Code**
+
+**Sending Data to NODE-RED Using MQTT Protocol Using DOCKER**
+
+**Creating DataBase and Sending Data**
+
+**Visualise Data**
+
+
 __REFERENCES__
 
 https://randomnerdtutorials.com/getting-started-with-esp32/
