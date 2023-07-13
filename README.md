@@ -40,7 +40,7 @@ Cables
 
 ![09190-03-L-1](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/7ee6b8f5-09f8-4c25-98ab-92b3c878fd65)
 
-*ESP32(comminicate between components and commend move)*
+*ESP32(comminicate between components and Internet)*
 
 ![esp32-esp-32s-wifi-bluetooth-dual-mode-developement-board-37182-73-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/485a1d5b-64e4-47ae-a275-bb5a1db75360)
 
