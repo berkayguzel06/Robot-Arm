@@ -1,3 +1,4 @@
+# Connects ESP32 to wifi
 import network
 
 class Net:
