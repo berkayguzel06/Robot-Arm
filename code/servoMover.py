@@ -1,4 +1,5 @@
-from servo import Servo # servo.py
+# Initalize and moves servos
+from servo import Servo
 from machine import Pin
 
 class Servos:
