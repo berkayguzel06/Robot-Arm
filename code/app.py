@@ -14,20 +14,20 @@ def start():
     vals = [0,0,0,0]
     prevPotVals = [0,0,0,0]
 
-    w = Net('SUPERONLINE_WiFi_7207', 'nyCkUhPDXzGJ')
+    w = Net('Name', 'Password') # Connect Wifi
     w.connect()
 
-    p = Pub('Sender', 'mosquitto.baylav.org')
-    baseR = Rec('baseReceiver', 'mosquitto.baylav.org','/staj/base')
-    arm1R = Rec('arm1Receiver', 'mosquitto.baylav.org','/staj/arm1')
-    arm2R = Rec('arm2Receiver', 'mosquitto.baylav.org','/staj/arm2')
-    gripperR = Rec('gripperReceiver', 'mosquitto.baylav.org','/staj/gripper')
+    p = Pub('Sender', 'mqttAddress') # Sends Data Through MQTT
+    baseR = Rec('baseReceiver', 'mqttAddress','/base') # Gets Data Through MQTT
+    arm1R = Rec('arm1Receiver', 'mqttAddress','/arm1')
+    arm2R = Rec('arm2Receiver', 'mqttAddress','/arm2')
+    gripperR = Rec('gripperReceiver', 'mqttAddress','/gripper')
 
-    # servos = Servos()
-    # servos.attach(22) #base
-    # servos.attach(23) #arm1
-    # servos.attach(25) #arm2
-    # servos.attach(26) #gripper
+    servos = Servos()
+    servos.attach(22) #base
+    servos.attach(23) #arm1
+    servos.attach(25) #arm2
+    servos.attach(26) #gripper
 
     pots = Pots()
     pots.attach(32) #base
@@ -64,13 +64,13 @@ def start():
             gripperR.receive()
             vals[3] = gripperR.returnVal()
             print(vals)
-            # servos.move(vals, prevPotVals)
+            servos.move(vals, prevPotVals)
             prevPotVals = vals
         elif not playFlg and not recordFlg:
             print("Sending from potentiometers")
             val = pots.read()
             print(val)
-            # servos.move(val, prevPotVals)
+            servos.move(val, prevPotVals)
             p.publish('/staj/base', val[0])
             p.publish('/staj/arm1', val[1])
             p.publish('/staj/arm2', val[2])
@@ -82,7 +82,7 @@ def start():
                 print("Recording")
                 val = pots.read()
                 print(val)
-                # servos.move(val, prevPotVals)
+                servos.move(val, prevPotVals)
                 recorded.append(val)
                 if pauseBtn.value() == 1:
                     print("exit")
@@ -98,7 +98,7 @@ def start():
                 print("Playing record")
                 for i in recorded:
                     print(i)
-                    # servos.move(i, prevPotVals)
+                    servos.move(i, prevPotVals)
                     prevPotVals = i
                     if pauseBtn.value() == 1:
                         playFlg = False
