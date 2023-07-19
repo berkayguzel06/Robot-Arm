@@ -1,45 +1,43 @@
-from machine import Pin, PWM
+from machine import PWM
+import math
+
+# originally by Radomir Dopieralski http://sheep.art.pl
+# from https://bitbucket.org/thesheep/micropython-servo
 
 class Servo:
-    # these defaults work for the standard TowerPro SG90
-    __servo_pwm_freq = 50
-    __min_u10_duty = 26 - 0 # offset for correction
-    __max_u10_duty = 123- 0  # offset for correction
-    min_angle = 0
-    max_angle = 180
-    current_angle = 0.001
+    """
+    A simple class for controlling hobby servos.
 
+    Args:
+        pin (machine.Pin): The pin where servo is connected. Must support PWM.
+        freq (int): The frequency of the signal, in hertz.
+        min_us (int): The minimum signal length supported by the servo.
+        max_us (int): The maximum signal length supported by the servo.
+        angle (int): The angle between the minimum and maximum positions.
 
-    def __init__(self, pin):
-        self.__initialise(pin)
+    """
+    def __init__(self, pin, freq=50, min_us=600, max_us=2400, angle=180):
+        self.min_us = min_us
+        self.max_us = max_us
+        self.us = 0
+        self.freq = freq
+        self.angle = angle
+        self.pwm = PWM(pin, freq=freq, duty=0)
 
-
-    def update_settings(self, servo_pwm_freq, min_u10_duty, max_u10_duty, min_angle, max_angle, pin):
-        self.__servo_pwm_freq = servo_pwm_freq
-        self.__min_u10_duty = min_u10_duty
-        self.__max_u10_duty = max_u10_duty
-        self.min_angle = min_angle
-        self.max_angle = max_angle
-        self.__initialise(pin)
-
-
-    def move(self, angle):
-        # round to 2 decimal places, so we have a chance of reducing unwanted servo adjustments
-        # angle = round(angle, 2)
-        # do we need to move?
-        if angle == self.current_angle:
+    def write_us(self, us):
+        """Set the signal to be ``us`` microseconds long. Zero disables it."""
+        if us == 0:
+            self.pwm.duty(0)
             return
-        self.current_angle = angle
-        # calculate the new duty cycle and move the motor
-        duty_u10 = self.__angle_to_u10_duty(angle)
-        self.__motor.duty(duty_u10)
+        us = min(self.max_us, max(self.min_us, us))
+        duty = us * 1024 * self.freq // 1000000
+        self.pwm.duty(duty)
 
-    def __angle_to_u10_duty(self, angle):
-        return int((angle - self.min_angle) * self.__angle_conversion_factor) + self.__min_u10_duty
-
-
-    def __initialise(self, pin):
-        self.current_angle = -0.001
-        self.__angle_conversion_factor = (self.__max_u10_duty - self.__min_u10_duty) / (self.max_angle - self.min_angle)
-        self.__motor = PWM(Pin(pin))
-        self.__motor.freq(self.__servo_pwm_freq)
+    def write_angle(self, degrees=None, radians=None):
+        """Move to the specified angle in ``degrees`` or ``radians``."""
+        if degrees is None:
+            degrees = math.degrees(radians)
+        degrees = degrees % 360
+        total_range = self.max_us - self.min_us
+        us = self.min_us + total_range * degrees // self.angle
+        self.write_us(us)
