@@ -56,28 +56,22 @@ Cables
 
 **Assembling the potentiometers with chop-sticks**
 
-(potansiometre foto)
+![potentioAssemble](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/d304b0ae-4658-4cd6-8e2d-4f762dd17807)
+
+**Get together potetiometers, servo motors, and make connection with ESP32**
+
+![servo_esp32_potentio_assemble](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/838c28cb-599a-43e7-b091-459ddcebac87)
 
 **Cable Connections**
 
 (circuit diagram foto)
 
-**MicroPython Code**
+
+Now Add Pyhton Codes to ESP32
+
 
 **Sending Data to NODE-RED Using MQTT Protocol Using DOCKER**
 
 **Creating DataBase and Sending Data**
 
 **Visualise Data**
-
-
-__REFERENCES__
-
-https://randomnerdtutorials.com/getting-started-with-esp32/
-https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
-https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/
-https://www.upesy.com/blogs/tutorials/esp32-servo-motor-sg90-on-micropython
-
-
-
-
