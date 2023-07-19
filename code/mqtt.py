@@ -1,3 +1,4 @@
+# Helps to send and receive data through MQTT
 from umqtt.simple import *
 from time import sleep
 
