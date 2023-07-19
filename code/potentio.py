@@ -1,3 +1,4 @@
+# Initalize and revecive data from potentiometers
 from machine import Pin, ADC
 import time
 
