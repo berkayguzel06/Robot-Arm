@@ -1,4 +1,3 @@
-# Initalize and revecive data from potentiometers
 from machine import Pin, ADC
 import time
 
@@ -7,7 +6,7 @@ class Pots:
         self.pinNums = []
         self.pots = []
         self.atten = ADC.ATTN_11DB
-        self.width = ADC.WIDTH_9BIT
+        self.width = ADC.WIDTH_12BIT
     
     def attach(self,pinNum):
         if pinNum not in self.pinNums:
