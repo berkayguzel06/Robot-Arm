@@ -10,13 +10,13 @@ recorded = [] # Holds the current record
 vals = [0,0,0,0] # Current values
 
 # Connect sender to the server
-p = Pub('Sender', 'mosquitto.baylav.org')
+p = Pub('Sender', 'server')
 p.connect()
 # Connect receivers to the server
-baseR = Rec('baseReceiver', 'mosquitto.baylav.org','/staj/base')
-arm1R = Rec('arm1Receiver', 'mosquitto.baylav.org','/staj/arm1')
-arm2R = Rec('arm2Receiver', 'mosquitto.baylav.org','/staj/arm2')
-gripperR = Rec('gripperReceiver', 'mosquitto.baylav.org','/staj/gripper')
+baseR = Rec('baseReceiver', 'server','/topic/base')
+arm1R = Rec('arm1Receiver', 'server','/topic/arm1')
+arm2R = Rec('arm2Receiver', 'server','/topic/arm2')
+gripperR = Rec('gripperReceiver', 'server','/topic/gripper')
 
 # Initialize the servos
 servos = Servos()
@@ -95,10 +95,10 @@ def potentioMove():
         vals = pots.read()
         print(vals)
         servos.move(vals)
-        p.publish('/staj/base', (str(vals[0]) + ',potentiometer'))
-        p.publish('/staj/arm1', (str(vals[1]) + ',potentiometer'))
-        p.publish('/staj/arm2', (str(vals[2]) + ',potentiometer'))
-        p.publish('/staj/gripper', (str(vals[3]) + ',potentiometer'))
+        p.publish('/topic/base', (str(vals[0]) + ',potentiometer'))
+        p.publish('/topic/arm1', (str(vals[1]) + ',potentiometer'))
+        p.publish('/topic/arm2', (str(vals[2]) + ',potentiometer'))
+        p.publish('/topic/gripper', (str(vals[3]) + ',potentiometer'))
         button()
         sleep(.1)
         if i + 1 == maxStep:
@@ -153,10 +153,10 @@ def play():
             for i in recorded:
                 print(i)
                 servos.move(i)
-                p.publish('/staj/base', (str(i[0]) + ',play'))
-                p.publish('/staj/arm1', (str(i[1]) + ',play'))
-                p.publish('/staj/arm2', (str(i[2]) + ',play'))
-                p.publish('/staj/gripper', (str(i[3]) + ',play'))
+                p.publish('/topic/base', (str(i[0]) + ',play'))
+                p.publish('/topic/arm1', (str(i[1]) + ',play'))
+                p.publish('/topic/arm2', (str(i[2]) + ',play'))
+                p.publish('/topic/gripper', (str(i[3]) + ',play'))
                 if pauseBtn.value() == 1:
                     pauseFlg = True
                     playFlg = False
