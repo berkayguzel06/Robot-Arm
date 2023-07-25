@@ -6,5 +6,5 @@
 print("Boot: RUN")
 from net import Net
 
-w = Net('berkay', '12345678')
+w = Net('name', 'password')
 w.connect()
