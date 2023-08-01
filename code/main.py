@@ -10,13 +10,13 @@ recorded = [] # Holds the current record
 vals = [0,0,0,0] # Current values
 
 # Connect sender to the server
-p = Pub('Sender', 'server')
+p = Pub('Sender', 'serverName')
 p.connect()
 # Connect receivers to the server
-baseR = Rec('baseReceiver', 'server','/topic/base')
-arm1R = Rec('arm1Receiver', 'server','/topic/arm1')
-arm2R = Rec('arm2Receiver', 'server','/topic/arm2')
-gripperR = Rec('gripperReceiver', 'server','/topic/gripper')
+baseR = Rec('baseReceiver', 'serverName','/topic/base')
+arm1R = Rec('arm1Receiver', 'serverName','/topic/arm1')
+arm2R = Rec('arm2Receiver', 'serverName','/topic/arm2')
+gripperR = Rec('gripperReceiver', 'serverName','/topic/gripper')
 
 # Initialize the servos
 servos = Servos()
@@ -167,12 +167,14 @@ def play():
             playFlg = False
         
         if playCount > 2:
-            print("-----COOLING-----")           
+            print("-----COOLING-----")
+            p.publish('/topic/status', "standby")         
             for j in range(2):
                 for i in range(4095,2048,-100):
                     servos.move([i,4095,4095,4095])
                     sleep(.1)
             sleep(STAND_BY)
+            p.publish('/topic/status', "active")         
             playCount = 0
     
 if __name__ == "__main__":

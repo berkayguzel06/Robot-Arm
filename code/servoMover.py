@@ -16,7 +16,7 @@ class Servos:
     def move(self, vals):
         for i in range(4):
             val = vals[i]
-            mapped_val = _map_range(val, 0,4096 ,0 ,180)
+            mapped_val = _map_range(val, 0,2047 ,0 ,180)
             self.motors[i].write_angle(degrees=mapped_val)
             
 # Map function

@@ -3,8 +3,9 @@
 #esp.osdebug(None)
 #import webrepl
 #webrepl.start()
+# Connects the ESP32 to internet
 print("Boot: RUN")
 from net import Net
 
-w = Net('name', 'password')
+w = Net('ssid', 'password')
 w.connect()
