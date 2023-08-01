@@ -14,7 +14,7 @@ Objectives
 
 -Construct a functional miniature robot arm using pop-sticks as the primary building material.
 - Integrate four potentiometers to enable precise control of the robot arm's movements.
-- Implement an MQTT communication using DOCKER system in microPython to facilitate data exchange between the
+- Implement an MQTT communication in microPython to facilitate data exchange between the
 robot arm and external devices.
 - Sending datas to a Database
 
