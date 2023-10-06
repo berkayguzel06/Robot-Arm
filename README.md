@@ -46,7 +46,7 @@ watching the industrial arm's conditions in real time.
 
 **Get together potetiometers, servo motors, and make connection with ESP32**
 
-![robotArm](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/31e6e23e-21e2-473f-9d0a-549df3c10805)
+![robotArm2](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/6be566cc-aa5a-4c35-b995-0484e72c797d)
 
 **Now Add Pyhton Codes to ESP32**
 
