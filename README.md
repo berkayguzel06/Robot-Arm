@@ -25,24 +25,19 @@ watching the industrial arm's conditions in real time.
 
 ## Components
 
-Pop-Sticks(for fasten the potentiometers, cables, servos) 
-Cables
-
 *1 Servo for clipper (open-close)*
 
-![towrpro_sg90](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f4e308f1-529f-42a8-9e83-8806c4511df1)
+*4 MG996R Servo (controlling each arm link)*
 
-*4 10K Potentiometer(to move arms with potentiometers)*
-
-![10k-potans-potansiyometre-spike-55636-56-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f572a792-8eae-4c5c-9ca6-14051aa3bcfb)
+*4 10K Potentiometer(to move MG996R servos with potentiometers)*
 
 *4 Button(for mutiple feature)*
-
-![09190-03-L-1](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/7ee6b8f5-09f8-4c25-98ab-92b3c878fd65)
+- 1 for switching server and potentiometer controlling
+- 1 for record arm movements
+- 1 for playing this record
+- 1 for open and close clipper to hold objects
 
 *ESP32(comminicate between components and Internet)*
-
-![esp32-esp-32s-wifi-bluetooth-dual-mode-developement-board-37182-73-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/485a1d5b-64e4-47ae-a275-bb5a1db75360)
 
 ## Assembling The Arm
 **Assembling the servo motors, potentiometers and making cable connections circuit desing**
@@ -62,11 +57,18 @@ MQTT_in nodes connects a topic and gets sends data to gauges
 MQTT_out nodes send data to ESP32  from sliders
 Orange nodes helps to store data to SQLite database
 
-![node-red_flow](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/11f972ff-0845-437c-a2c5-e6e862d8556a)
+![node-redFlow](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/aac00e82-0267-46b0-9602-24e12cf8e93d)
+*Main Robot Arm*
+
+![node-redFlowScara](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/76052f0e-2ddb-4db0-8cb8-28b0da98633b)
+*SCARA Arm*
 
 **Creating Node-Red UI**
 Sliders helps to control servos in Node-Red
 Gauges are shows the angle of potentiometers and servos
 Database is a SQLite database that stores the servo names, values, and status
 
-![node-red-ui](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/00515bc1-1e13-4fec-93df-a80d950748ed)
+![node-redUI](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/a1f10409-3f53-42a6-8686-6eeeba0e6468)
+
+## Robot Arm Demo
+![](https://drive.google.com/file/d/1fgrEn9rv6O4Lq0qHN0ewIDoMhQujrdZO/view?usp=sharing)
