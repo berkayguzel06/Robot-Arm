@@ -1,3 +1,5 @@
+![image](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/08c2d3b5-a7d2-4914-b3f2-d501c46553a0)
+
 # Robot Arm Tutorial
 
 Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
