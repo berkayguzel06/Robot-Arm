@@ -12,7 +12,7 @@ Fetching and displaying data will be handled.
 
 Objectives
 
--Construct a functional miniature robot arm using pop-sticks as the primary building material.
+- Construct a functional miniature robot arm using 3D model as the primary building material.
 - Integrate four potentiometers to enable precise control of the robot arm's movements.
 - Implement an MQTT communication in microPython to facilitate data exchange between the
 robot arm and external devices.
@@ -28,7 +28,7 @@ watching the industrial arm's conditions in real time.
 Pop-Sticks(for fasten the potentiometers, cables, servos) 
 Cables
 
-*4 Servo(for moving arm)*
+*1 Servo for clipper (open-close)*
 
 ![towrpro_sg90](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f4e308f1-529f-42a8-9e83-8806c4511df1)
 
@@ -36,7 +36,7 @@ Cables
 
 ![10k-potans-potansiyometre-spike-55636-56-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/f572a792-8eae-4c5c-9ca6-14051aa3bcfb)
 
-*1 Button(for changing movement mode)*
+*4 Button(for mutiple feature)*
 
 ![09190-03-L-1](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/7ee6b8f5-09f8-4c25-98ab-92b3c878fd65)
 
@@ -45,7 +45,7 @@ Cables
 ![esp32-esp-32s-wifi-bluetooth-dual-mode-developement-board-37182-73-B](https://github.com/berkayguzel06/Robotic_Arm/assets/98205992/485a1d5b-64e4-47ae-a275-bb5a1db75360)
 
 ## Assembling The Arm
-**Assembling the servo motors, potentiometers and making cable connecitons circuit desing**
+**Assembling the servo motors, potentiometers and making cable connections circuit desing**
 
 ![ESP32CircuitDiagramV5](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/23ebbd96-525e-4696-9a99-da37cd3d2bbf)
 
