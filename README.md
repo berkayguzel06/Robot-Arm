@@ -71,4 +71,4 @@ Database is a SQLite database that stores the servo names, values, and status
 ![node-redUI](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/a1f10409-3f53-42a6-8686-6eeeba0e6468)
 
 ## Robot Arm Demo
-![](https://drive.google.com/file/d/1fgrEn9rv6O4Lq0qHN0ewIDoMhQujrdZO/view?usp=sharing)
+(https://drive.google.com/file/d/1fgrEn9rv6O4Lq0qHN0ewIDoMhQujrdZO/view?usp=sharing)
