@@ -3,6 +3,7 @@
 # Robot Arm Tutorial
 
 Digital Twin in Machinery and Tools – Miniature Robot Arm with Potentiometer-based Control and MQTT Communication
+> **Demonstration video is located at the bottom of this document.**
 
 ## BRD (Business Requirements)
 
