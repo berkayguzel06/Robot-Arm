@@ -75,6 +75,8 @@ Database is a SQLite database that stores the servo names, values, and status
 
 ## Robot Arm Demo Video
 
-Watch the demonstration video [here](https://drive.google.com/file/d/1fgrEn9rv6O4Lq0qHN0ewIDoMhQujrdZO/view?usp=sharing).
+Watch the demonstration video
+
+https://github.com/berkayguzel06/Robot-Arm/assets/98205992/1ceb1cf3-8ca9-4a95-af73-3f9df5756e0d
 
 This project aims to provide precise control and remote monitoring capabilities for industrial arms, ultimately reducing human intervention and minimizing errors. It demonstrates the integration of hardware, software, and data handling to create a functional miniature robot arm.
