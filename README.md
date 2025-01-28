@@ -47,7 +47,7 @@ watching the industrial arm's conditions in real time.
 
 ![ESP32CircuitDiagramV5](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/23ebbd96-525e-4696-9a99-da37cd3d2bbf)
 
-**Get together potetiometers, servo motors, and make connection with ESP32**
+**Get together potetiometers, servo motor, and make connection with ESP32**
 
 ![robotArm2](https://github.com/berkayguzel06/Robot-Arm/assets/98205992/6be566cc-aa5a-4c35-b995-0484e72c797d)
 
